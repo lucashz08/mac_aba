@@ -16,17 +16,23 @@
             div.code_buttons{width:30%; padding: 2px; position: relative; float:left;}
             div.code_buttons a{width: 11px; height: 11px; margin:3px;display: block; position: relative; float:left;
              background-color: #ff0707bd; border-radius: 50%; border:1px solid #dcdcdc;}
-            div.code_title{width:60%; padding: 2px; position: relative; float: left; text-align: center; color:#504e4e; z-index: 10; cursor:move;}
+            div.code_title{width:60%; padding: 2px; position: relative; float: left; text-align: center; color:#504e4e;}
             div.code_title h1{font-size: 12px; padding: 2px;}
         </style>
         <script>       
             function moveWindow(elmnt)
             {
                 var pos1 = 0, pos2 = 0, post3 = 0, pos4 = 0;
+                elmnt.style.zIndex = 9;
 
                 if(document.getElementById(elmnt.id+"_bar"))
                 {
-                    document.getElementById(elmnt.id+"_bar").onmousedown = dragMouseDown;
+                    var moveAb = document.getElementById(elmnt.id+"_bar");
+
+                    moveAb.onmousedown = dragMouseDown;
+                    moveAb.style.cursor = "move";
+                    moveAb.style.zIndex = 10;
+
                 }else
                 {
                     elmnt.onmousedown = dragMouseDown;
@@ -89,7 +95,7 @@
             aba.style.top= "100px";
             aba.style.left= "30px";
             moveWindow(aba);
-            
+
         </script>
     </body>
 </html>
