@@ -1,0 +1,7 @@
+*{margin: 0; padding:0; font-family: Arial, Helvetica, sans-serif; font-size:15px;}            
+div.code_conteiner{ width: 200px; height: 200px; display: block; background: #fafafa; border-radius: 5px; border:1px solid #c0c0c0; box-shadow: 0px 0px 10px #808080; position:absolute; overflow: hidden; z-index: 9;}
+div.code_top{width: 100%; height: 22px; background-image: linear-gradient(to bottom, #f0f0f0, #dcdcdc); border-radius:3px 3px 0px 0px; border-bottom:1px solid #c0c0c0; position: relative; float: left;}
+div.code_buttons{width:30%; padding: 2px; position: relative; float:left;}
+div.code_buttons a{width: 11px; height: 11px; margin:3px;display: block; position: relative; float:left; background-color: #ff0707bd; border-radius: 50%; border:1px solid #dcdcdc;}
+div.code_title{width:60%; padding: 2px; position: relative; float: left; text-align: center; color:#504e4e;}
+div.code_title h1{font-size: 12px; padding: 2px;}
